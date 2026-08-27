@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oppgavebeskrivelse – Praksis hos IBM</title>
+<meta name="description" content="Oppgavebeskrivelse for IS-302 praksisprosjekt hos IBM Consulting Norway.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#innhold">Hopp til innhold</a>
+
+<!-- Toppmeny: lik på alle sider -->
+<header class="masthead">
+  <a class="masthead__brand" href="index.html">
+    <span class="masthead__mark">IBM</span>
+    <span class="masthead__divider"></span>
+    <span class="masthead__title">Praksis hos IBM</span>
+  </a>
+  <nav class="mainnav" aria-label="Hovedmeny">
+    <a href="index.html">Hjem</a>
+    <a href="oppgavebeskrivelse.html" aria-current="page">Oppgavebeskrivelse</a>
+    <a href="prosjektdagbok.html">Prosjektdagbok</a>
+    <a href="om-meg.html">Om meg</a>
+    <a href="om-ibm.html">Om IBM</a>
+    <a href="status-1.html">Status 1</a>
+    <a href="status-2.html">Status 2</a>
+    <a href="refleksjon.html">Avsluttende refleksjon</a>
+  </nav>
+</header>
+
+<main class="content" id="innhold">
+  <h1 class="page-title">Oppgavebeskrivelse</h1>
+  <div class="rule"></div>
+  <p class="lede">Oppgaven går ut på å bygge og sette i drift en fullverdig data-pipeline som demonstrator — fra åpne datakilder på internett til en visualisert sluttapplikasjon, med en data-sentrisk sikkerhetsmodell gjennom hele kjeden.</p>
+
+  <p>Kjerneprinsippet er at sikkerheten ikke sitter i nettverket eller applikasjonen, men i dataene selv. Tilgangspolicyer og kryptering knyttes til hvert enkelt datasett og følger det uansett hvilken applikasjon eller bruker som aksesserer det.</p>
+
+  <h2 class="section-title">Fire faser</h2>
+  <ul class="checklist">
+    <li><strong>Plattformoppsett</strong> — sette opp dataplattformen på Red Hat OpenShift (ROKS) på IBM Cloud</li>
+    <li><strong>CI/CD</strong> — automatisert bygging, testing og deployment av plattformkomponentene</li>
+    <li><strong>Dataintegrasjon og sikkerhet</strong> — åpne flydata gjennom pipeline, med attributtbasert tilgangskontroll og kryptering på datalaget</li>
+    <li><strong>Demonstrator</strong> — REST API og visualisering som viser hele datareisen fra rådata til brukergrensesnitt</li>
+  </ul>
+
+  <h2 class="section-title">Teknologier</h2>
+  <p>IBM Cloud, Red Hat OpenShift, Kubernetes, GitHub Actions, Apache Kafka, Apache Iceberg, Apache Spark, Trino, watsonx.data, IBM Key Protect, Apache Superset, React og FastAPI.</p>
+</main>
+
+<footer class="footer">
+  <span>UiA &nbsp;praksisprosjekt &nbsp;·&nbsp; IS-302 &nbsp;·&nbsp; Laurie Shima Niyongabo</span>
+  <span>2026</span>
+</footer>
+
+</body>
+</html>
