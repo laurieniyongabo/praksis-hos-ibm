@@ -81,13 +81,6 @@ button:focus-visible {
   color: inherit;
 }
 
-.masthead__mark {
-  font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-weight: 700;
-  font-size: 1.125rem;
-  letter-spacing: 0.12em;
-}
-
 .masthead__logo {
   width: 72px;
   height: auto;
