@@ -88,6 +88,12 @@ button:focus-visible {
   letter-spacing: 0.12em;
 }
 
+.masthead__logo {
+  width: 72px;
+  height: auto;
+  display: block;
+}
+
 .masthead__divider {
   width: 1px;
   height: 24px;
