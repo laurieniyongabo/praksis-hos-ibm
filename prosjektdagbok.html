@@ -44,75 +44,104 @@
   </section>
 
   <section class="diary-list">
-
-    <!-- UKE 35 -->
+    <!-- UKE 42 -->
     <details class="diary-entry">
       <summary>
-        <span class="diary-week">UKE 35</span>
-        <h2>Prosjektavklaring og første møte</h2>
+        <span class="diary-week">UKE 42</span>
+        <h2>Videre arbeid med Confluent Kafka</h2>
       </summary>
 
       <div class="diary-content">
         <p>
-          Jeg var kort innom IBM-kontoret og møtte de to hovedansvarlige
-          for prosjektet. Vi gikk gjennom prosjektets scope og konkretiserte
-          prosjektbeskrivelsen, slik at det ble tydeligere hva jeg skal jobbe
-          med gjennom praksisperioden. Etter møtet ble prosjektbeskrivelsen
-          sendt til emneansvarlig ved UiA for godkjenning.
+          Denne uken har jeg jobbet videre med å forstå hvordan StreamSets skal kobles til
+          Confluent Kafka, som er neste del av dataflyten i prosjektet. Jeg har fått en
+          gjennomgang av hvordan Confluent er satt opp i testmiljøet, og brukt tid på å
+          utforske løsningen selv for å bli bedre kjent med konfigurasjonen.
         </p>
-
         <p>
-          Fokuset var først og fremst å få en bedre forståelse av prosjektet,
-          forventningene og hva jeg skal jobbe med videre.
+          Jeg har blant annet lært mer om hvordan Kafka bruker brokere til å ta imot og
+          videreformidle data. I vårt miljø kjører Confluent direkte på OpenShift, og vi
+          bruker interne endepunkter i stedet for å eksponere brokerne på internett.
+          Jeg har også sett nærmere på hvordan watsonx.data inngår i integrasjonen
+          mellom tjenestene. Det er flere innstillinger som må være riktige for at
+          komponentene skal kunne kommunisere med hverandre.
+        </p>
+        <p>
+          En viktig del av arbeidet har vært å forstå oppsettet som allerede er gjort,
+          og prøve å gjenskape deler av det selv. Jeg har også brukt tid på å lese om
+          Kafka og Confluent, siden dette er teknologier jeg ikke har jobbet særlig
+          mye med tidligere. Det har vært nyttig å se hvordan de brukes i et faktisk
+          prosjekt, og ikke bare lese om dem i teorien.
+        </p>
+        <p>
+          Veien videre er å få koblet StreamSets-pipelinen til Kafka, slik at flydataene
+          fra OpenSky kan sendes videre i plattformen. Jeg skal også fortsette å sette
+          meg inn i hvordan dataene kan lagres og behandles i de neste delene av løsningen.
         </p>
       </div>
     </details>
 
-    <!-- UKE 36 -->
+        <!-- UKE 41 -->
     <details class="diary-entry">
       <summary>
-        <span class="diary-week">UKE 36</span>
-        <h2>Team, teknologier og planlegging</h2>
+        <span class="diary-week">UKE 41</span>
+        <h2>Oppstart av den praktiske delen</h2>
       </summary>
 
       <div class="diary-content">
         <p>
-          Denne uken møtte jeg resten av teamet og ble kjent med flere av
-          personene som skal bidra i prosjektet. Vi gikk gjennom
-          teknologistacken, den overordnede fremdriftsplanen og hvordan vi
-          skal organisere faste møtepunkter gjennom praksisperioden.
-        </p>
+Denne uken er jeg på IBM-kontoret i tre dager, og vi har begynt å jobbe praktisk med IBM StreamSets for å komme i gang med den første delen av datapipelinen.
 
-        <p>
-          Vi brukte også en del tid på å avklare hvilke tilganger jeg trenger
-          til IBM sine produkter og tjenester. Vi satte opp Slack og fikk på
-          plass en tydeligere plan for kommunikasjon. Jeg fikk også flere
-          dokumenter og presentasjoner fra lignende prosjekter som jeg kunne
-          begynne å lese meg opp på.
-        </p>
+Mye av tiden har gått til å bli kjent med StreamSets, forstå hvordan det fungerer og prøve å få ting til å kjøre som de skal. Vi har støtt på flere problemer underveis, så det har blitt en del feilsøking og testing av ulike løsninger.
+
+Vi har også jobbet med å sette opp konfigurasjoner til Confluent, som skal brukes videre i dataflyten.
+
+Selv om vi ikke har kommet så langt med selve pipelinen ennå, har det vært lærerikt å jobbe med teknologiene i praksis. Det er en del forskjell på å lese om hvordan noe fungerer og å faktisk prøve å sette det opp selv.        </p>
+
+        <figure class="diary-photo" style="max-width:680px;margin:24px 0;">
+          <img src="status-2-assets/uke-41-pc.jpg" alt="Uke 41 – arbeid med StreamSets på IBM-kontoret." loading="lazy" style="display:block;width:100%;height:auto;border-radius:4px;">
+          <figcaption style="margin-top:8px;font-size:0.9rem;color:#525252;">Uke 41 – arbeid med StreamSets på IBM-kontoret.</figcaption>
+        </figure>
       </div>
     </details>
 
-    <!-- UKE 37 -->
+      <!-- UKE 40 -->
     <details class="diary-entry">
       <summary>
-        <span class="diary-week">UKE 37</span>
-        <h2>Bli kjent med prosjektet</h2>
+        <span class="diary-week">UKE 40</span>
+        <h2>Gjennomgang av teknologiene</h2>
       </summary>
 
       <div class="diary-content">
         <p>
-          Denne uken har jeg hovedsakelig brukt tid på å sette meg bedre inn
-          i prosjektet og de viktigste temaene. Jeg har blant annet lest mer
-          om moderne dataplattformer, data pipelines og datasentrisk
-          sikkerhet, spesielt Attribute-Based Access Control (ABAC).
+          Denne uken begynte vi å gå mer konkret gjennom teknologiene vi skal bruke i prosjektet. Det tekniske miljøet var nå satt opp med flere av programmene vi trenger, blant annet OpenShift, Data Fabric, Cloud Pak for Data, watsonx.data og Confluent.
+
+Vi hadde også et møte hvor vi gikk gjennom hva de ulike teknologiene gjør, hvordan de henger sammen, og hvilken rolle de skal ha i løsningen vi skal bygge. Det var nyttig å få en bedre oversikt over teknologistacken, spesielt siden mye av dette er nytt for meg.
+
+Nå som miljøet er satt opp, begynner vi også å nærme oss den praktiske delen av prosjektet.
         </p>
 
+        <figure class="diary-photo" style="max-width:680px;margin:24px 0;">
+          <img src="status-2-assets/uke-40-teams.jpg" alt="Uke 40 – digitalt møte med teamet." loading="lazy" style="display:block;width:100%;height:auto;border-radius:4px;">
+          <figcaption style="margin-top:8px;font-size:0.9rem;color:#525252;">Uke 40 – digitalt møte med teamet.</figcaption>
+        </figure>
+      </div>
+    </details>
+
+    <!-- UKE 39 -->
+    <details class="diary-entry">
+      <summary>
+        <span class="diary-week">UKE 39</span>
+        <h2>Status 1 og en roligere uke</h2>
+      </summary>
+
+      <div class="diary-content">
         <p>
-          Det er mange nye teknologier og konsepter sammenlignet med det jeg
-          tidligere har jobbet med på studiet, så mye av arbeidet nå handler
-          om å forstå hvordan de ulike delene henger sammen. Arbeidet med å
-          få nødvendige tilganger har også fortsatt.
+          Denne uken hadde vi ingen møter hos IBM, siden flere på teamet hadde 
+          ferie. Jeg brukte derfor tiden på å ferdigstille Status 1 til UiA, hvor 
+          jeg oppsummerte hva jeg hadde jobbet med og lært så langt i 
+          praksisperioden. Vi hadde også en samling hvor vi presenterte statusen 
+          vår og diskuterte erfaringer fra de ulike praksisplassene.
         </p>
       </div>
     </details>
@@ -144,58 +173,75 @@
       </div>
     </details>
 
-    <!-- UKE 39 -->
+    <!-- UKE 37 -->
     <details class="diary-entry">
       <summary>
-        <span class="diary-week">UKE 39</span>
-        <h2>Status 1 og en roligere uke</h2>
+        <span class="diary-week">UKE 37</span>
+        <h2>Bli kjent med prosjektet</h2>
       </summary>
 
       <div class="diary-content">
         <p>
-          Denne uken hadde vi ingen møter hos IBM, siden flere på teamet hadde 
-          ferie. Jeg brukte derfor tiden på å ferdigstille Status 1 til UiA, hvor 
-          jeg oppsummerte hva jeg hadde jobbet med og lært så langt i 
-          praksisperioden. Vi hadde også en samling hvor vi presenterte statusen 
-          vår og diskuterte erfaringer fra de ulike praksisplassene.
+          Denne uken har jeg hovedsakelig brukt tid på å sette meg bedre inn
+          i prosjektet og de viktigste temaene. Jeg har blant annet lest mer
+          om moderne dataplattformer, data pipelines og datasentrisk
+          sikkerhet, spesielt Attribute-Based Access Control (ABAC).
+        </p>
+
+        <p>
+          Det er mange nye teknologier og konsepter sammenlignet med det jeg
+          tidligere har jobbet med på studiet, så mye av arbeidet nå handler
+          om å forstå hvordan de ulike delene henger sammen. Arbeidet med å
+          få nødvendige tilganger har også fortsatt.
         </p>
       </div>
     </details>
 
-      <!-- UKE 40 -->
+    <!-- UKE 36 -->
     <details class="diary-entry">
       <summary>
-        <span class="diary-week">UKE 40</span>
-        <h2>Gjennomgang av teknologiene</h2>
+        <span class="diary-week">UKE 36</span>
+        <h2>Team, teknologier og planlegging</h2>
       </summary>
 
       <div class="diary-content">
         <p>
-          Denne uken begynte vi å gå mer konkret gjennom teknologiene vi skal bruke i prosjektet. Det tekniske miljøet var nå satt opp med flere av programmene vi trenger, blant annet OpenShift, Data Fabric, Cloud Pak for Data, watsonx.data og Confluent.
+          Denne uken møtte jeg resten av teamet og ble kjent med flere av
+          personene som skal bidra i prosjektet. Vi gikk gjennom
+          teknologistacken, den overordnede fremdriftsplanen og hvordan vi
+          skal organisere faste møtepunkter gjennom praksisperioden.
+        </p>
 
-Vi hadde også et møte hvor vi gikk gjennom hva de ulike teknologiene gjør, hvordan de henger sammen, og hvilken rolle de skal ha i løsningen vi skal bygge. Det var nyttig å få en bedre oversikt over teknologistacken, spesielt siden mye av dette er nytt for meg.
-
-Nå som miljøet er satt opp, begynner vi også å nærme oss den praktiske delen av prosjektet.
+        <p>
+          Vi brukte også en del tid på å avklare hvilke tilganger jeg trenger
+          til IBM sine produkter og tjenester. Vi satte opp Slack og fikk på
+          plass en tydeligere plan for kommunikasjon. Jeg fikk også flere
+          dokumenter og presentasjoner fra lignende prosjekter som jeg kunne
+          begynne å lese meg opp på.
         </p>
       </div>
     </details>
 
-        <!-- UKE 41 -->
+    <!-- UKE 35 -->
     <details class="diary-entry">
       <summary>
-        <span class="diary-week">UKE 41</span>
-        <h2>Oppstart av den praktiske delen</h2>
+        <span class="diary-week">UKE 35</span>
+        <h2>Prosjektavklaring og første møte</h2>
       </summary>
 
       <div class="diary-content">
         <p>
-Denne uken er jeg på IBM-kontoret i tre dager, og vi har begynt å jobbe praktisk med IBM StreamSets for å komme i gang med den første delen av datapipelinen.
+          Jeg var kort innom IBM-kontoret og møtte de to hovedansvarlige
+          for prosjektet. Vi gikk gjennom prosjektets scope og konkretiserte
+          prosjektbeskrivelsen, slik at det ble tydeligere hva jeg skal jobbe
+          med gjennom praksisperioden. Etter møtet ble prosjektbeskrivelsen
+          sendt til emneansvarlig ved UiA for godkjenning.
+        </p>
 
-Mye av tiden har gått til å bli kjent med StreamSets, forstå hvordan det fungerer og prøve å få ting til å kjøre som de skal. Vi har støtt på flere problemer underveis, så det har blitt en del feilsøking og testing av ulike løsninger.
-
-Vi har også jobbet med å sette opp konfigurasjoner til Confluent, som skal brukes videre i dataflyten.
-
-Selv om vi ikke har kommet så langt med selve pipelinen ennå, har det vært lærerikt å jobbe med teknologiene i praksis. Det er en del forskjell på å lese om hvordan noe fungerer og å faktisk prøve å sette det opp selv.        </p>
+        <p>
+          Fokuset var først og fremst å få en bedre forståelse av prosjektet,
+          forventningene og hva jeg skal jobbe med videre.
+        </p>
       </div>
     </details>
   </section>
