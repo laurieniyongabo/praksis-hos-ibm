@@ -4,16 +4,48 @@
 <head>
 <meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Status 2 fra praksis hos IBM Consulting – IS-302, høsten 2026." name="description"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 <title>Status 2 | Praksis hos IBM</title>
 <style>
 :root{--blue:#0f62fe;--dark:#161616;--gray:#525252;--light:#f4f4f4;--line:#e0e0e0;--ice:#edf5ff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--dark);background:#f8f9fb;line-height:1.7}a{color:#0043ce}a:hover{text-decoration:none}.top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}.nav{max-width:1120px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 24px}.brand{font-size:20px;font-weight:800;letter-spacing:-1px;color:#111;text-decoration:none}.brand span{color:var(--blue)}.navlinks{display:flex;gap:22px;flex-wrap:wrap}.navlinks a{font-size:14px;text-decoration:none;color:#393939}.navlinks .active{color:var(--blue);font-weight:700}.wrap{max-width:1120px;margin:0 auto;padding:0 24px}.hero{background:#fff;border-bottom:1px solid var(--line);padding:60px 0 52px}.eyebrow{color:var(--blue);text-transform:uppercase;font-weight:700;letter-spacing:2px;font-size:12px}.hero h1{font-size:clamp(44px,7vw,78px);letter-spacing:-3px;line-height:1.06;margin:14px 0 20px}.intro{max-width:760px;color:var(--gray);font-size:19px;line-height:1.65}.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}.pill{padding:8px 12px;background:var(--light);font-size:12px;font-weight:700;color:#393939}.main{padding:40px 0 80px}.section{margin:0 0 60px}.section-head{display:flex;align-items:center;gap:14px;margin-bottom:16px}.num{font-size:12px;font-weight:700;color:var(--blue);letter-spacing:1px}.section h2{font-size:clamp(26px,3vw,36px);letter-spacing:-1px;line-height:1.2;margin:0 0 20px}.section p{margin:0 0 16px;color:#393939}.card{background:#fff;border:1px solid #e7e7e7;padding:28px 30px;margin:18px 0;box-shadow:0 5px 24px rgba(0,0,0,.025)}.card.blue{border-left:4px solid var(--blue)}.card h3{font-size:20px;margin:0 0 10px;letter-spacing:-.4px}.card p:last-child{margin-bottom:0}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:24px 0}.metric{background:#fff;border:1px solid var(--line);padding:22px}.metric strong{font-size:19px;display:block;letter-spacing:-.4px}.metric span{display:block;font-size:12px;text-transform:uppercase;color:#6f6f6f;letter-spacing:.7px;margin-top:5px}.video-box{background:#fff;border:1px solid var(--line);padding:25px}.video-inner{aspect-ratio:16/9;background:linear-gradient(135deg,#161616,#263c65);display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:24px}.video-inner strong{font-size:24px;display:block}.video-inner p{color:#ddd;margin-top:10px}.note{background:var(--ice);border-left:3px solid var(--blue);padding:16px 20px;color:#263e65;font-size:14px;margin:16px 0}.flow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:26px 0}.flow .step{background:#fff;border:1px solid var(--line);padding:16px 12px;min-height:118px}.step b{font-size:13px;display:block;line-height:1.4}.step small{color:#777;font-size:11px}.step.done{border-top:4px solid var(--blue)}.step.next{border-top:4px solid #8d8d8d}.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.gallery figure{margin:0;background:#fff;border:1px solid var(--line);overflow:hidden}.gallery img{display:block;width:100%;height:360px;object-fit:cover;object-position:center}.gallery figcaption{padding:12px 16px;font-size:13px;color:#525252}.placeholder{background:#f1f4f8;border:2px dashed #b8c5d5;min-height:220px;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;color:#586778}.placeholder strong{display:block;color:#263e65}.shot-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.shot-grid figure{margin:0}.shot-grid figcaption{font-size:13px;color:#555;margin-top:8px}.footer{background:#161616;color:#eee;padding:28px 0;font-size:13px}.footer a{color:#a6c8ff}code{background:#f1f1f1;padding:2px 5px;font-size:.9em;overflow-wrap:anywhere}@media(max-width:720px){.nav{align-items:flex-start;flex-direction:column}.hero{padding:42px 0}.cards,.flow{grid-template-columns:1fr 1fr}.gallery,.shot-grid{grid-template-columns:1fr}.gallery img{height:330px}.card{padding:22px}.intro{font-size:17px}}@media(max-width:430px){.flow{grid-template-columns:1fr}.cards{grid-template-columns:1fr}}
 
 /* Status 2: samme åpne tekstuttrykk som Status 1, uten rammer rundt avsnittene */
 body{background:#fff}.prose-block{padding:0;margin:25px 0 34px;background:transparent;border:0;box-shadow:none}.prose-block h3{font-size:21px;margin:0 0 14px;letter-spacing:-.35px}.prose-block p{margin:0 0 17px}.section{margin-bottom:70px}.section h2{margin-bottom:26px}.gallery figure{border:0}.gallery figcaption{padding:10px 0}.diary-photo{margin:24px 0 32px;max-width:620px}.diary-photo img{display:block;width:100%;height:auto;border-radius:2px}.diary-photo figcaption{font-size:13px;color:#525252;margin-top:8px}
+
+/* Status 2: bruk typografien og toppmenyen fra Status 1 */
+body { font-family: "IBM Plex Sans", system-ui, -apple-system, sans-serif; font-size:16px; line-height:1.5; background:#fff; }
+.hero h1 { font-family: "IBM Plex Sans", sans-serif; font-weight:300; font-size:clamp(2.5rem,7vw,4.5rem); letter-spacing:-.03em; }
+.section h2 { font-family:"IBM Plex Sans",sans-serif; font-weight:400; letter-spacing:-.01em; }
+.section h3 { font-family:"IBM Plex Sans",sans-serif; }
+.masthead { font-family:"IBM Plex Sans",sans-serif; }
+.masthead a { color:inherit; }
+.masthead .mainnav a[aria-current="page"] { color:#0f62fe; }
 </style>
 </head>
 <body>
-<header class="top"><nav class="nav"><a class="brand" href="index.html">IBM<span> / </span>Praksis</a><div class="navlinks"><a href="index.html">Hjem</a><a href="prosjektdagbok.html">Prosjektdagbok</a><a href="status-1.html">Status 1</a><a href="status-2.html" class="active">Status 2</a><a aria-current="page" class="active" href="status-2.html">Status 2</a></div></nav></header>
+<a class="skip-link" href="#innhold">Hopp til innhold</a>
+
+<!-- Toppmeny: lik på alle sider -->
+<header class="masthead">
+  <a class="masthead__brand" href="index.html">
+    <span class="masthead__mark">IBM</span>
+    <span class="masthead__divider"></span>
+    <span class="masthead__title">Praksis hos IBM</span>
+  </a>
+  <nav class="mainnav" aria-label="Hovedmeny">
+    <a href="index.html">Hjem</a>
+    <a href="oppgavebeskrivelse.html">Oppgavebeskrivelse</a>
+    <a href="prosjektdagbok.html">Prosjektdagbok</a>
+    <a href="om-meg.html">Om meg</a>
+    <a href="om-ibm.html">Om IBM</a>
+    <a href="status-1.html">Status 1</a>
+    <a href="status-2.html" aria-current="page">Status 2</a>
+    <a href="refleksjon.html">Avsluttende refleksjon</a>
+  </nav>
+</header>
 <section class="hero"><div class="wrap"><div class="eyebrow">IS-302 · Praksis hos IBM Consulting · Høst 2026</div><h1>Status 2<span style="color:var(--blue)">.</span></h1><p class="intro">Fra planlegging og teknologiforståelse til praktisk arbeid med en moderne dataplattform. Her oppsummerer jeg fremdriften i prosjektet, utfordringene underveis og hva jeg skal jobbe med videre.</p><div class="meta"><span class="pill">Oppdatert: uke 42</span><span class="pill">Dataplattform</span><span class="pill">StreamSets · OpenSky · Confluent Kafka</span></div></div></section>
 <main class="wrap main">
 <section class="section" id="video"><div class="section-head"><span class="num">00 / OBLIGATORISK SAMLING 2</span></div><h2>Videopresentasjon</h2><p>Her legges videopresentasjonen til obligatorisk samling 2 den 22. oktober 2026. Videoen oppsummerer hva jeg har jobbet med, hvilke utfordringer jeg har møtt, og hva jeg ønsker å diskutere videre.</p><div class="video-box"><div class="video-inner"><div><strong>Presentasjonsvideo kommer her</strong><p>Erstatt denne boksen med en videolenke eller innebygd video når den er klar.</p></div></div></div></section>
